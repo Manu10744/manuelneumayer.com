@@ -3,8 +3,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
       type   : 'slide',
       arrows: false,
       autoplay: true,
+      autoheight: true,
+      autoheight: true,
+      width: 1080,
       perPage: 3,
-      width: 700,
       gap: "20px",
       mediaQuery: "min",
       breakpoints: {

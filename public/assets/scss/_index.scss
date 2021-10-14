@@ -252,7 +252,6 @@ header {
         .tech-list {
             .tech-item {
                 height: 70px;
-                width: 70px;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -431,6 +430,8 @@ header {
         padding-left: 150px;
         padding-right: 150px;
     }
+
+    .tech-section .splide .tech-list .tech-item { height: 90px; }
 }
 
 @media (min-width: 1540px) { 
@@ -447,10 +448,11 @@ header {
         }
     }
 
-
     .cv-section .personal-image {
         height: 250px;
         width: 250px;
         right: 150px;
     }
+
+    .tech-section .splide .tech-list .tech-item { height: 100px; }
 }
