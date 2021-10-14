@@ -19,49 +19,34 @@ function activateMobileNavigation() {
 function fadeNavigationIn() {
     anime.timeline({ easing: 'easeInQuad' })
         .add({
-            targets: '.navigation',
+            targets: 'nav',
             opacity: [0, 1],
-            duration: 800,
+            duration: 400,
             begin: () => { 
-                document.querySelector(".navigation").style.display = 'block'; 
+                document.querySelector("nav").style.display = 'block'; 
             }
         })
         .add({
-            targets: '.navigation ul li',
+            targets: 'nav ul li',
             translateX: ['-100%', '0%'],
-            delay: anime.stagger(100)
-        }, '-=1400')
-        .add({
-            targets: '.navigation-personal-info-wrapper',
-            easing: 'easeOutQuad',
-            opacity: [0, 1],
-            translateY: ['50px', '0px']
-        })
-        .add({
-            targets: '.navigation-social-container',
-            translateY: ['50px', '0px'],
-            easing: 'easeOutQuad',
-            opacity: [0, 1],
-            delay: anime.stagger(150)
-        }, '-=1000')
+            delay: anime.stagger(100),
+            duration: 300
+        });
 }
 
 function fadeNavigationOut() {
     anime.timeline({ easing: 'easeOutQuad' })
         .add({
-            targets: '.navigation ul li',
+            targets: 'nav ul li',
             translateX: ['0%', '-100%'],
-            delay: anime.stagger(100)
-        }, '-=800')
-        .add({
-            targets: '.navigation-personal-info-wrapper',
-            opacity: [1, 0],
+            delay: anime.stagger(100),
+            duration: 300
         })
         .add({
-            targets: '.navigation',
+            targets: 'nav',
             opacity: [1, 0],
             complete: () => { 
-                document.querySelector(".navigation").style.display = ''; 
+                document.querySelector("nav").style.display = 'none'; 
             }
         })
 }

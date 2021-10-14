@@ -97,7 +97,7 @@ header {
         img {
             max-width: 100%;
             max-height: 100%;
-
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
             border: 3px solid $gray;
         }
     }
@@ -118,11 +118,18 @@ header {
         .contact-btn {
             padding: 8px 15px;
             margin: 15px 0;
-            border: 2px solid $cyan;
+            border: 2px solid $black;
             display: inline-block;
             font-weight: bold;
             color: $black;
             font-size: 0.75em;
+            background: $white;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact-btn:hover {
+            background: $black;
+            color: $white;
         }
     }
 
@@ -159,8 +166,6 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     box-shadow: 0px -4px 4px rgba(0,0,0,0.1);
-    
-                    svg { color: $black; }
                 }
     
                 .timestamp {
@@ -192,6 +197,10 @@ header {
                     color: $black;
                     font-weight: 400;
                     margin-top: 5px;
+
+                    svg {
+                        margin-right: 10px;
+                    }
                 }
             }
 
@@ -291,6 +300,58 @@ header {
     bottom: -18px;
     right: 0;
     background: $dark-gray;
+}
+
+.blog-section {
+    .blog {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .blog-item {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid $gray;
+            margin: 20px auto;
+
+            .blog-item-img {
+                min-height: 200px;
+                width: auto;
+                background: $black;
+            }
+
+            .blog-item-content {
+                padding: 20px 20px;
+
+                .blog-tag {
+                    padding: 5px 10px;
+                    background: $beige;
+                    font-size: 0.7em;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+                
+                h1 { font-size: 1em; margin-bottom: 5px; }
+                p { font-size: 0.875em; }
+
+                .read-more-btn {
+                    margin-top: 15px;
+                    font-weight: bold;
+                    color: $cyan;
+                    display: block;
+                    display: flex;
+                    transition: color 0.3s ease-in-out;
+                    
+                    svg { margin-right: 10px; }
+                }
+
+                .read-more-btn:hover {
+                    color: $dark-cyan;
+                }
+            }
+        }
+    }
 }
 
  /** MEDIA QUERIES **/
@@ -423,6 +484,14 @@ header {
     }
 
     .cv-section .contact .contact-btn { font-size: 1em; }
+
+    .blog-section .blog {
+        flex-direction: row;
+
+        .blog-item {
+            margin: 0 5px;
+        }
+    }
 }
 
 @media (min-width: 1200px) {

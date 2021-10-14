@@ -24,6 +24,7 @@ body {
     height: 100%;
     min-width: 300px;
     background: $light-gray;
+    position: relative;
 }
 
 li { list-style: none; }
@@ -38,7 +39,16 @@ section {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
     display: none;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
 
     // Styling of active navigation components
     .active-nav-item {
@@ -50,18 +60,24 @@ nav {
         }
     }
 
-    li {
-        display: inline-block;
-        padding: 20px;
+    ul {
+        position: relative;
+        top: 100px;
+        left: 0;
 
-        a {
-            color: $white;
-            font-size: 14px;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
+        li {
+            display: block;
+            padding: 20px;
+    
+            a {
+                color: $white;
+                font-size: 14px;
+                font-weight: bold;
+                transition: color 0.3s ease-in-out;
+            }
+    
+            a:hover { color: $cyan; }
         }
-
-        a:hover { color: $cyan; }
     }
 }
 
@@ -96,7 +112,6 @@ nav {
 .content {
     height: 100%;
     background: $white;
-    height: 2500px; //TODO : Remove later
 }
 
 .container {
@@ -147,32 +162,6 @@ nav {
     }
 }
 
-// GlideJS Glider Controls
-.glide__bullets {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-
-    .glide__bullet {
-        height: 8px;
-        width: 8px;
-        border-radius: 50%;
-        background: #999;
-        margin: 0 5px;
-        cursor: pointer;
-    }
-    
-    .glide__bullet--active {
-        background: $dark-white;
-    }
-}
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 .typewriter {
     position: relative;
 }
@@ -217,6 +206,40 @@ nav {
     span:nth-child(3) { 
         transform: translate(10px, 10px); 
         animation-delay: 0s;
+    }
+}
+
+footer {
+    width: 100%;
+    background: rgba(0,0,0,1);
+    padding: 25px 0;
+    position: relative;
+
+    .footer-seperator { 
+        width: 75%;
+        max-width: 750px;
+        margin: 20px auto;
+        border-color: #202020;
+    }
+
+    .footer-socials {
+        text-align: center;
+        color: $white;
+
+        h3 { margin-bottom: 10px; }
+
+        a {
+            color: $cyan;
+            margin: 0 15px;
+        }
+    }
+
+    .footer-information {
+        text-align: center;
+        color: $white;
+        
+        p { font-size: 0.8em; }
+        a { font-size: 0.7em; color: $white; }
     }
 }
 
@@ -269,10 +292,26 @@ nav {
 
     header {
         padding-top: 0;
-    }
 
-    nav {
-        display: block;
+        // Mobile Navigation ausschalten, normale aktivieren
+        nav {
+            display: block;
+            position: static;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            background: none;
+            width: auto;
+            height: auto;
+
+            ul {
+                top: auto;
+                left: auto;
+
+                li { display: inline-block; }
+            }
+        }
     }
 
     .mobile-nav-toggler { display: none; }
