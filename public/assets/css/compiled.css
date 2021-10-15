@@ -235,11 +235,16 @@ header .header-content p span {
   margin: 75px auto 0 auto;
 }
 .tech-section .splide .tech-list .tech-item {
+  display: flex;
+  justify-content: center;
   height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   filter: grayscale(100%);
+}
+.tech-section .splide .tech-list .tech-item img {
+  margin: 0 auto;
 }
 .tech-section .splide .tech-list .html {
   background-image: url("/assets/img/HTML5.svg");
@@ -264,6 +269,12 @@ header .header-content p span {
 }
 .tech-section .splide .splide__pagination {
   bottom: -30px;
+}
+.tech-section .splide .prev-slide-btn {
+  left: -15px;
+}
+.tech-section .splide .next-slide-btn {
+  right: -15px;
 }
 
 .tech-section::before {
@@ -373,12 +384,24 @@ header .header-content p span {
     left: -27px;
   }
 
+  .intro-section::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    bottom: -50px;
+    background: url("/assets/img/points-decorator.png");
+    background-size: cover;
+    z-index: 9;
+  }
+
   .cv-section {
     padding-top: 100px;
   }
   .cv-section .personal-image {
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 175px;
   }
   .cv-section .contact .contact-btn {
     font-size: 0.9em;
@@ -446,6 +469,10 @@ header .header-content p span {
     z-index: 0;
   }
 
+  .cv-section .personal-image {
+    height: 200px;
+    width: 200px;
+  }
   .cv-section .contact .contact-btn {
     font-size: 1em;
   }

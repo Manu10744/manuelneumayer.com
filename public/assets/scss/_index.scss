@@ -257,14 +257,18 @@ header {
 
     .splide {  
         margin: 75px auto 0 auto; 
-
+        
         .tech-list {
             .tech-item {
+                display: flex;
+                justify-content: center;
                 height: 70px;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
                 filter: grayscale(100%);
+
+                img { margin: 0 auto; }
             }
 
             .html { background-image: url('/assets/img/HTML5.svg'); }
@@ -279,6 +283,9 @@ header {
         .splide__pagination {
             bottom: -30px;
         }
+
+        .prev-slide-btn { left: -15px; }
+        .next-slide-btn { right: -15px; }
     }
  }
 
@@ -399,12 +406,24 @@ header {
         }
     }
 
+    .intro-section::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 100px;
+        bottom: -50px;
+        background: url('/assets/img/points-decorator.png');
+        background-size: cover;
+        z-index: 9;
+    }
+
     .cv-section {
         padding-top: 100px;
 
         .personal-image {
-            height: 200px;
-            width: 200px;
+            height: 175px;
+            width: 175px;
         }
 
         .contact .contact-btn { font-size: 0.9em; }
@@ -483,7 +502,14 @@ header {
         }
     }
 
-    .cv-section .contact .contact-btn { font-size: 1em; }
+    .cv-section {
+        .personal-image {
+            height: 200px;
+            width: 200px;
+        }
+
+        .contact .contact-btn { font-size: 1em; }
+    }
 
     .blog-section .blog {
         flex-direction: row;
