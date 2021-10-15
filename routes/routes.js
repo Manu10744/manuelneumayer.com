@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
     res.render("index.ejs"); 
 });
 
-router.get("blog", (req, res) => {
+router.get("/blog", (req, res) => {
     res.send("Muss ich noch machen.");
 })
 

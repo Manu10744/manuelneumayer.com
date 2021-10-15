@@ -8,7 +8,7 @@
 @import 'utility/_variables.scss';
 
 /* Include fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap');
 
 
@@ -47,31 +47,29 @@ nav {
     height: 100%;
     width: 100%;
     display: none;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     z-index: 2;
 
     // Styling of active navigation components
     .active-nav-item {
-        background: $dark-cyan;
-        border-bottom: 2px solid $cyan;
-
         a {
             color: $cyan;
+            font-size: 2.25em;
         }
     }
 
     ul {
         position: relative;
         top: 100px;
-        left: 0;
+        left: 10%;
 
         li {
             display: block;
-            padding: 20px;
+            padding: 10px 0;
     
             a {
                 color: $white;
-                font-size: 14px;
+                font-size: 1.25em;
                 font-weight: bold;
                 transition: color 0.3s ease-in-out;
             }
@@ -126,9 +124,11 @@ nav {
     margin-bottom: 60px;
 
     span { 
-        font-size: 0.9em; 
+        font-size: 0.75em; 
         z-index: 2; 
-        position: relative;
+        text-transform: uppercase;
+        position: relative; // Erforderlich, damit nicht von h1::before überschattet
+        letter-spacing: 3px;
     }
 
     h1 {
@@ -230,7 +230,7 @@ footer {
 
         a {
             color: $cyan;
-            margin: 0 15px;
+            margin: 0 10px;
         }
     }
 
@@ -305,11 +305,22 @@ footer {
             width: auto;
             height: auto;
 
+            .active-nav-item {
+                background: $dark-cyan;
+                border-bottom: 2px solid $cyan;
+
+                a { font-size: 1em;  }
+            }
+
             ul {
                 top: auto;
                 left: auto;
 
-                li { display: inline-block; }
+                li { 
+                    display: inline-block; padding: 20px;
+                    
+                    a { font-size: 1em; }
+                }
             }
         }
     }

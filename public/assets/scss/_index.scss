@@ -131,6 +131,11 @@ header {
             position: relative;
         }
 
+        .contact-btn:hover {
+            background: $black;
+            color: $white;
+        }
+
         .contact-btn::after {
             content: '';
             height: 100%;
@@ -140,11 +145,6 @@ header {
             left: 5px;
             background: $black;
             z-index: -1;
-        }
-
-        .contact-btn:hover {
-            background: $black;
-            color: $white;
         }
     }
 
@@ -296,7 +296,7 @@ header {
         }
 
         .splide__pagination {
-            bottom: -30px;
+            bottom: -50px;
         }
 
         .prev-slide-btn { left: -15px; }
@@ -358,7 +358,7 @@ header {
                 p { font-size: 0.875em; }
 
                 .read-more-btn {
-                    margin-top: 15px;
+                    margin-top: 20px;
                     font-weight: bold;
                     color: $cyan;
                     display: block;
@@ -424,12 +424,13 @@ header {
     .intro-section::before {
         content: '';
         position: absolute;
-        width: 100px;
         height: 100px;
-        left: 100px;
+        width: 100px;
+        left: 75px;
         bottom: -50px;
         background: url('/assets/img/points-decorator.png');
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         z-index: 9;
     }
 
