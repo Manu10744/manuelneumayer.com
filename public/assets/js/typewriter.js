@@ -1,5 +1,3 @@
-import { barbaIsRunning } from './barbaConfig.js';
-
 export const typewriterList = [];
 const typewriters = document.querySelectorAll(".typewriter");
 
@@ -13,7 +11,6 @@ export const Typewriter = function(el, speed) {
   this.wordsToPrint = el.innerText;
   this.currValue = '';
   this.speed = speed;
-
   this.el.innerText = '';
   this.type();
 }
@@ -22,11 +19,9 @@ export const Typewriter = function(el, speed) {
  * Typing method for the typewriter effect
  */
 Typewriter.prototype.type = function() {
-  if (isInViewport(this.el) && !barbaIsRunning()) {
-    if (!this.el.classList.contains("revealable") || this.el.classList.contains("revealable") && this.el.style.opacity > 0) {
-      this.currValue = this.wordsToPrint.substring(0, this.currValue.length + 1);
-      this.el.innerHTML = this.currValue;
-    }
+  if (isInViewport(this.el)) {
+    this.currValue = this.wordsToPrint.substring(0, this.currValue.length + 1);
+    this.el.innerHTML = this.currValue;
   }
 
   let timeout = setTimeout(() => { this.type(); }, 40);

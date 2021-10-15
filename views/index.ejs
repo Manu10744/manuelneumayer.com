@@ -1,218 +1,216 @@
 <!DOCTYPE html>
-<html lang="<%- language %>">
+<html lang="de">
 
-<head>
-    <title>Manuel Neumayer</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/css/glider.min.css" rel="stylesheet">
-    <link href="/assets/css/compiled.css" rel="stylesheet">
-</head>
+    <head>
+        <title>Manuel Neumayer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/assets/css/libs/splide.min.css" rel="stylesheet">
+        <link href="/assets/css/compiled.css" rel="stylesheet">
+    </head>
 
-<body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="home">
-        <header>
-            <div class="mobile-nav-toggler">
-                <div class="mobile-nav-line first"></div>
-                <div class="mobile-nav-line second"></div>
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li class="active-nav-item"><a href="/<%- language %>"> <%- docText.common.home %> </a></li>
-                    <li><a href="/<%- language %>/about"> <%- docText.common.about %> </a></li>
-                    <li><a href="/<%- language %>/portfolio"> <%- docText.common.portfolio %> </a></li>
-                    <li><a href="#"> <%- docText.common.impressum %> </a></li>
-                </ul>
-
-                <%- include ('partials/mobileNavInfo.ejs') %>
-            </div>
-            <div class="logo">
-                <h3><span class="letters">Web Development</span></h3>
-                <p><span class="letters">By Manuel Neumayer</span></p>
-            </div>
-        </header>
-
-        <div class="page-wrapper">
-            <div class="welcome-wrapper">
-                <div data-reveal-type="fade" class="welcome-section revealable">
-                    <div class="heading">
-                        <h1 class="no-letter-spacing"> <%- docText.index_page.welcome_heading %> </h1>
+    <body>
+        <div class="content">
+            <div class="container">
+                <!-- HEADER -->
+                <header>
+                    <div class="mobile-nav-toggler">
+                        <div class="mobile-nav-line first"></div>
+                        <div class="mobile-nav-line second"></div>
                     </div>
 
-                    <div class="subheading">
-                        <h1 class="typewriter">
-                            <%- docText.index_page.welcome_heading_subtitle %> </h1>
+                    <nav>
+                        <ul>
+                            <li class="active-nav-item"><a href="/">Home</a></li>
+                            <li><a href="/blog">Mein Blog</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-content">
+                        <h1>MANUEL NEUMAYER<span class="highlighted">.</span></h1>
+                        <p><span class="highlighted">IT-Student</span> in München.</p>
                     </div>
 
-                    <div class="contact-section">
-                        <p> <%- docText.index_page.welcome_text_left %>
-                            <span class="colored"> <%- docText.index_page.welcome_text_highlighted %> </span>
-                            <%- docText.index_page.welcome_text_right %>
-                        </p>
-                    </div>
-                </div>
+                    <div class="scroll-down-indicator"><span></span><span></span><span></span></div>
+                </header>
 
-                <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="width: 100%;">
-                    <path d="M-0.27,135.69 C149.99,150.00 291.48,73.52 501.97,135.69 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: #f7f7f7;"></path>
-                </svg>
-
-                <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="width: 100%;">
-                    <path d="M0.28,131.73 C149.99,150.00 351.30,28.13 500.27,134.70 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: #f7f7f7; fill-opacity: 0.3;"></path>
-                </svg>
-
-                <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="width: 100%;">
-                    <path d="M0.28,131.73 C149.99,150.00 354.12,40.95 501.97,147.53 L501.97,153.45 L0.00,150.00 Z"
-                        style="stroke: none; fill: #f7f7f7; fill-opacity: 0.5"></path>
-                </svg>
-            </div>
-
-            <div class="intro-section">
-                <div class="container">
-                    <div class="intro-content-container">
+                <!-- INTRO SECTION -->
+                <section class="intro-section">
+                    <div class="intro-wrapper">
+                        <div class="intro-heading">
+                            <h1 class="typewriter">Hey!</h1>
+                            <h3 class="typewriter">Herzlich Willkommen auf meiner persönlichen Website.</h3>
+                        </div>
+                    
                         <div class="intro-content">
-                            <div data-reveal-type="textRevealFromOverflow" class="prev-heading-wrapper revealable">
-                                <h3>HOME</h3>
-                                <span class="heading-line"></span>
-                            </div>
-                            <div class="intro-heading">
-                                <h1 data-reveal-type="textRevealFromOverflow" class="revealable">Web Development.</h1>
-                                <h1 data-reveal-type="textRevealFromOverflow" class="revealable"><strong>Individuell.</strong><h1>
-                            </div>
+                            <p>Ich heiße <span class="highlighted">Manuel Neumayer</span> und komme aus der Nähe von München. Nachdem ich anfing, mir das Programmieren selbst beizubringen, habe ich beschlossen, Informatik an der Universität in München zu studieren.</p> 
+                            <br>
+                            <p>Seitdem arbeite in München als Werkstudent in der Softwareentwicklung.</p>
+                            <p>Meine Interessen liegen vor allem in folgenden Bereichen:</p>
+    
+                            <ul class="interests-list">
+                                <li>Softwareprogrammierung</li>
+                                <li>DevOps</li>
+                                <li>Internet of Things (IoT)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-                            <div data-reveal-type="fade" class="intro-text revealable">
-                                <p>Als Entwickler mit Fokus auf Fullstack-Entwicklung bin ich Ihr Ansprechpartner für Fragen und Ideen im Bereich Web- und Softwareentwicklung - ich berate Sie gerne zu Entwicklung von Websites, Integration von Services in bestehende Anwendungen und vielem mehr - ich freue mich darauf, von Ihnen zu hören!</p>
+                <!-- CV SECTION -->
+                <section class="cv-section">
+                    <div class="personal-image">
+                        <img src="/assets/img/me-min.jpg" alt="My personal image">
+                    </div>
+
+                    <div class="main-heading">
+                        <span>Über mich</span>
+                        <h1>Lebenslauf.</h1>
+                    </div>
+
+                    <div class="contact">
+                        <p>Sie möchten mich kontaktieren?</p>
+                        <p>Schreiben Sie gerne <span class="highlighted">eine Email.</span></p>
+                        <a class="contact-btn" href="mailto:kontakt@manuelneumayer.com">Kontaktieren</a>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item right">
+                            <div class="timeline-item-content">
+                                <div class="item-icon-container">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <span class="timestamp">2020 - Heute</span>
+                                <h1 class="item-title typewriter">Werkstudent in der Softwareentwicklung</h1>
+                                <h3 class="item-location"><i class="fas fa-map-marker-alt"></i> Faktor Zehn GmbH, München</h3>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline-item left">
+                            <div class="timeline-item-content">
+                                <div class="item-icon-container">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <span class="timestamp">2018 - Heute</span>
+                                <h1 class="item-title typewriter">Studium der Informatik und Computerlinguistik</h1>
+                                <h3 class="item-location"><i class="fas fa-map-marker-alt"></i>Ludwig-Maximilians-Universität, München</h3>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline-item right">
+                            <div class="timeline-item-content">
+                                <div class="item-icon-container">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <span class="timestamp">2016 - 2018</span>
+                                <h1 class="item-title typewriter">Allgemeine Hochschulreife</h1>
+                                <h3 class="item-location"><i class="fas fa-map-marker-alt"></i>Fachoberschule, Bad Tölz</h3>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
 
-            <div class="offers-wrapper">
+            <!-- TECHNOLOGIES SECTION -->
+            <section class="tech-section">
                 <div class="container">
-                    <h1 data-reveal-type="fade" class="offers-heading revealable"> <%- docText.index_page.offers_background_headline %> </h1>
-
-                    <div data-reveal-type="textRevealFromOverflow" class="prev-heading-wrapper revealable">
-                        <h3>HOME</h3>
-                        <span class="heading-line"></span>
+                    <div class="main-heading">
+                        <span>Über mich</span>
+                        <h1>Programmiersprachen & andere Technologien.</h1>
                     </div>
-                    <h1 data-reveal-type="textRevealFromOverflow" class="revealable typewriter offers-intro"> <%- docText.index_page.offers_headline %> </h1>
 
-                    <div data-reveal-type="fade" class="offers revealable">
-                        <h3 data-reveal-type="fade" class="offer-item revealable">Entwicklung und Pflege von Websites</h3>
-                        <h3 data-reveal-type="fade" class="offer-item revealable">Entwicklung von Datenbankanwendungen</h3>
-                        <h3 data-reveal-type="fade" class="offer-item revealable">Unterstützung in Entwicklungsteams</h3>
-                        <h3 data-reveal-type="fade" class="offer-item revealable">Entwicklung und Integration von Services wie RESTful APIs</h3>
-                        <h3 data-reveal-type="fade" class="offer-item revealable">E-Commerce</h3>
-                    </div>
+                    <div class="splide">
+                        <div class="splide__track">
+                              <ul class="splide__list tech-list">
+                                  <li class="splide__slide tech-item"><img class="tech-item" src="/assets/img/HTML5.svg"></li>
+                                  <li class="splide__slide tech-item"><img class="tech-item" src="/assets/img/CSS3.svg"></li>
+                                  <li class="splide__slide tech-item"><img class="tech-item" src="/assets/img/JavaScript.svg"></li>
+                                  <li class="splide__slide tech-item"><img class="tech-item" src="/assets/img/nodejs.svg"></li>
+                                  <li class="splide__slide tech-item"><img class="tech-item" src="/assets/img/Java.svg"></li>
+                                  <li class="splide__slide tech-item"><img class="tech-item" src="/assets/img/docker.svg"></li>
+                                  
+
+                                  <!-- <li class="splide__slide tech-item css"></li>
+                                  <li class="splide__slide tech-item javascript"></li>
+                                  <li class="splide__slide tech-item java"></li>
+                                  <li class="splide__slide tech-item python"></li>
+                                  <li class="splide__slide tech-item docker"></li>
+                                  <li class="splide__slide tech-item nodejs"></li> -->
+                              </ul>
+                        </div>
+                      </div>
                 </div>
+            </section>
 
-                <span class="decorator-line-thin"></span>
-                <span class="decorator-line-thick"></span>
-            </div>
+            <!-- BLOG SECTION -->
+            <section class="blog-section">
+                <div class="container">
+                    <div class="main-heading">
+                        <span>Blog</span>
+                        <h1>Neueste Blogposts.</h1>
+                    </div>
 
-            <div data-reveal-type="scaleXFromLeft" class="decorator-line revealable" style="margin-top: 150px;"></div>
-            <h1 data-reveal-type="fade" class="props-heading revealable"> Services </h1>
-
-            <div class="props-wrapper">
-                <div data-reveal-type="fade" class="props-image-container revealable"></div>
-                <div class="props-content-container">
-                    <div class="props">
-                        <div data-reveal-type="fade" class="prop-item revealable">
-                            <div class="icon-container">
-                                <i class="fas fa-gem"></i>
-                                <span class="decorator-top-left"></span>
-                                <span class="decorator-bottom-right"></span>
+                    <div class="blog">
+                        <div class="blog-item">
+                            <div class="blog-item-img"></div>
+                            <div class="blog-item-content">
+                                <span class="blog-tag">DevOps</span>
+                                <h1>Das ist eine Überschrift.</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+                                <a class="read-more-btn" href="#"><i class="fas fa-chevron-right"></i>Mehr lesen</a>
                             </div>
-                            <h3> <%- docText.index_page.services_item_one_headline %> </h3>
-                            <p> <%- docText.index_page.services_item_one_text %> </p>
-                            <span class="seperator"></span>
                         </div>
 
-                        <div data-reveal-type="fade" class="prop-item revealable">
-                            <div class="icon-container">
-                                <i class="fas fa-tty"></i>
-                                <span class="decorator-top-left"></span>
-                                <span class="decorator-bottom-right"></span>
+                        <div class="blog-item">
+                            <div class="blog-item-img"></div>
+                            <div class="blog-item-content">
+                                <span class="blog-tag">DevOps</span>
+                                <h1>Das ist eine Überschrift.</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+                                <a class="read-more-btn" href="#"><i class="fas fa-chevron-right"></i>Mehr lesen</a>
                             </div>
-                            <h3> <%- docText.index_page.services_item_two_headline %> </h3>
-                            <p> <%- docText.index_page.services_item_two_text %> </p>
-                            <span class="seperator"></span>
                         </div>
 
-                        <div data-reveal-type="fade" class="prop-item revealable">
-                            <div class="icon-container">
-                                <i class="fas fa-ruler-combined"></i>
-                                <span class="decorator-top-left"></span>
-                                <span class="decorator-bottom-right"></span>
+                        <div class="blog-item">
+                            <div class="blog-item-img"></div>
+                            <div class="blog-item-content">
+                                <span class="blog-tag">DevOps</span>
+                                <h1>Das ist eine Überschrift.</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+                                <a class="read-more-btn" href="#"><i class="fas fa-chevron-right"></i>Mehr lesen</a>
                             </div>
-                            <h3> <%- docText.index_page.services_item_three_headline %> </h3>
-                            <p> <%- docText.index_page.services_item_three_text %> </p>
-                            <span class="seperator"></span>
-                        </div>
-
-                        <div data-reveal-type="fade" class="prop-item revealable">
-                            <div class="icon-container">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span class="decorator-top-left"></span>
-                                <span class="decorator-bottom-right"></span>
-                            </div>
-                            <h3> <%- docText.index_page.services_item_four_headline %> </h3>
-                            <p> <%- docText.index_page.services_item_four_text %> </p>
-                            <span class="seperator"></span>
-                        </div>
-
-                        <div data-reveal-type="fade" class="prop-item revealable">
-                            <div class="icon-container">
-                                <i class="fas fa-tachometer-alt"></i>
-                                <span class="decorator-top-left"></span>
-                                <span class="decorator-bottom-right"></span>
-                            </div>
-                            <h3> <%- docText.index_page.services_item_five_headline %> </h3>
-                            <p> <%- docText.index_page.services_item_five_text %> </p>
-                            <span class="seperator"></span>
                         </div>
                     </div>
                 </div>
-
-                <div class="bg-points props-points-decorator"></div>
-            </div>
-
-            <%- include ('partials/contactSection.ejs') %>
-
-            <%- include ('partials/languageSelection.ejs') %>
+            </section>
         </div>
-    </main>
 
-    <div class="transition-container"></div>
+        <footer>
+            <div class="footer-socials">
+                <a href="https://github.com/Manu10744"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/manuel-neumayer/"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.xing.com/profile/Manuel_Neumayer5/cv"><i class="fab fa-xing fa-lg"></i></a>
+                <a href="https://stackoverflow.com/users/11356914/manu?tab=profile"><i class="fab fa-stack-overflow fa-lg"></i></a>
+            </div>
 
-    <%- include ('partials/footer.ejs') %>
+            <hr class="footer-seperator">
+        
+            <div class="footer-information">
+                <p>Copyright © 2021 Manuel Neumayer.</p>
+                <!-- <a href="#">Impressum</a> -->
+            </div>
+        </footer>
+    </body>
 
-    <script>
-        // Check for Browser Support of the IntersectionObserver API and use a polyfill in case it's not supported
-        if (!('IntersectionObserver' in window)) {
-            const polyFill = document.createElement("script");
-            polyFill.src = "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver";
-            document.body.appendChild(polyFill);
-        }
-    </script>
-
-    <!-- GliderJS -->
-    <script src="/assets/js/glider.min.js"></script>
-    <!-- BarbaJS -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="/assets/js/anime.min.js"></script>
+    <!-- AnimeJS -->
+    <script src="/assets/js/libs/anime.min.js"></script>
     <!-- FontAwesome -->
-    <script defer src="/assets/js/fontawesome.min.js"></script>
-    <script defer src="/assets/js/all.min.js"></script>
-
-    <script src="/assets/js/gliderJSConfig.js"></script>
-    <script type="module" src="/assets/js/select-language.js"></script>
-    <script type="module" src="/assets/js/mobile-navigation.js"></script>
-    <script type="module" src="/assets/js/animations.js"></script>
+    <script defer src="/assets/js/libs/fontawesome.min.js"></script>
+    <script defer src="/assets/js/libs/all.min.js"></script>
+    <!-- Splide (Slider) -->
+    <script src="/assets/js/libs/splide.min.js"></script>
+    <!-- Own JS -->
+    <script src="/assets/js/image-slider.js"></script>
     <script type="module" src="/assets/js/typewriter.js"></script>
-    <script type="module" src="/assets/js/barbaConfig.js"></script>
-</body>
-
+    <script src="/assets/js/mobile-nav.js"></script>
 </html>
