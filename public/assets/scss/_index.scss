@@ -18,7 +18,7 @@ header {
             color: $white;
             font-family: "Chivo";
             position: relative;
-            font-size: 2.25em;
+            font-size: 2.5em;
             line-height: 1em;
         }
 
@@ -115,6 +115,9 @@ header {
     }
 
     .contact {
+        position: relative; // Notwendig, um das ::after Element des .contact-btn zu platzieren.
+        z-index: 1; // Notwendig, um das ::after Element des .contact-btn zu platzieren.
+
         .contact-btn {
             padding: 8px 15px;
             margin: 15px 0;
@@ -125,6 +128,18 @@ header {
             font-size: 0.75em;
             background: $white;
             transition: background-color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .contact-btn::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background: $black;
+            z-index: -1;
         }
 
         .contact-btn:hover {
@@ -322,7 +337,7 @@ header {
             margin: 20px auto;
 
             .blog-item-img {
-                min-height: 200px;
+                min-height: 250px;
                 width: auto;
                 background: $black;
             }
