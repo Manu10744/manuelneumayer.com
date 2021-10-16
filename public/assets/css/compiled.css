@@ -852,6 +852,11 @@ footer .footer-information a {
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  .main-heading h1::before {
+    height: 55px;
+    width: 55px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
