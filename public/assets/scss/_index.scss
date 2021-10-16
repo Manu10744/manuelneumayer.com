@@ -527,11 +527,15 @@ header {
         .contact .contact-btn { font-size: 1em; }
     }
 
-    .blog-section .blog {
-        flex-direction: row;
+    .blog-section {
+        padding: 100px 0;
 
-        .blog-item {
-            margin: 0 5px;
+        .blog {
+            flex-direction: row;
+    
+            .blog-item {
+                margin: 0 5px;
+            }
         }
     }
 }
