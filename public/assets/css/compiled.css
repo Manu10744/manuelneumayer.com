@@ -493,6 +493,9 @@ header .header-content p span {
     font-size: 1em;
   }
 
+  .blog-section {
+    padding: 100px 0;
+  }
   .blog-section .blog {
     flex-direction: row;
   }
