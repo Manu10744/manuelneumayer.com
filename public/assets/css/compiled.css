@@ -285,11 +285,16 @@ header .header-content p span {
 .tech-section .splide .splide__pagination {
   bottom: -50px;
 }
+.tech-section .splide .splide__pagination button {
+  background: #C1CE9B;
+}
 .tech-section .splide .prev-slide-btn {
   left: -15px;
+  background: #C1CE9B;
 }
 .tech-section .splide .next-slide-btn {
   right: -15px;
+  background: #C1CE9B;
 }
 
 .tech-section::before {
@@ -463,7 +468,7 @@ header .header-content p span {
     position: absolute;
     top: -70px;
     left: 75px;
-    padding: 30px 50px;
+    padding: 30px;
     z-index: 1;
   }
   .intro-section .intro-wrapper .intro-heading h1 {
@@ -475,7 +480,7 @@ header .header-content p span {
   }
   .intro-section .intro-wrapper::before {
     content: "";
-    width: 500px;
+    width: 350px;
     height: 300px;
     background: #FCFCFC;
     position: absolute;
@@ -509,6 +514,10 @@ header .header-content p span {
     padding-right: 150px;
   }
 
+  .intro-section .intro-wrapper::before {
+    width: 350px;
+  }
+
   .tech-section .splide .tech-list .tech-item {
     height: 90px;
   }
@@ -523,6 +532,10 @@ header .header-content p span {
     position: absolute;
     top: -70px;
     left: 100px;
+    padding: 30px 50px;
+  }
+  .intro-section .intro-wrapper::before {
+    width: 400px;
   }
 
   .cv-section .personal-image {
