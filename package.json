@@ -4,7 +4,7 @@
   "description": "My personal website, redesigned.",
   "main": "app.js",
   "scripts": {
-    "sass": "sass --watch ./public/assets/scss/global.scss ./public/assets/css/compiled.css",
+    "sass": "sass --watch ./public/assets/scss/global.scss ./public/assets/css/compiled.css --style compressed",
     "dev": "nodemon app.js"
   },
   "author": "Manuel Neumayer",
