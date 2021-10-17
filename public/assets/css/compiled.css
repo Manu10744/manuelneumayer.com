@@ -59,6 +59,10 @@ header .header-content p span {
 .intro-section .intro-wrapper .intro-heading h1 {
   font-size: 2em;
   margin-bottom: 5px;
+  background: #0E0E0E;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  display: inline-block;
 }
 .intro-section .intro-wrapper .intro-heading h3 {
   margin-bottom: 20px;
@@ -474,6 +478,9 @@ header .header-content p span {
   }
   .intro-section .intro-wrapper .intro-heading h1 {
     font-size: 2.5em;
+    background: none;
+    color: #0E0E0E;
+    padding: 0;
   }
   .intro-section .intro-wrapper .intro-content {
     z-index: 1;
