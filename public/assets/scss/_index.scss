@@ -123,6 +123,8 @@ header {
         position: relative; // Notwendig, um das ::after Element des .contact-btn zu platzieren.
         z-index: 1; // Notwendig, um das ::after Element des .contact-btn zu platzieren.
 
+        h3 { margin-bottom: 5px; }
+        
         .contact-btn {
             padding: 8px 15px;
             margin: 15px 0;

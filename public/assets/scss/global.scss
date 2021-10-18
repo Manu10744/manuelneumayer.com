@@ -211,7 +211,7 @@ nav {
 
 footer {
     width: 100%;
-    background: rgba(0,0,0,1);
+    background: $black;
     padding: 25px 0;
     position: relative;
 
@@ -226,20 +226,18 @@ footer {
         text-align: center;
         color: $white;
 
-        h3 { margin-bottom: 10px; }
-
         a {
             color: $cyan;
-            margin: 0 10px;
+            margin: 0 15px;
         }
     }
 
     .footer-information {
         text-align: center;
-        color: $white;
+        color: $gray;
         
         p { font-size: 0.8em; }
-        a { font-size: 0.7em; color: $white; }
+        a { font-size: 0.7em; color: $gray; }
     }
 }
 
