@@ -198,7 +198,7 @@ header {
                     padding: 5px 10px;
                     margin-top: 10px;
                     margin-bottom: 5px;
-                    font-size: 0.75em;
+                    font-size: 0.6em;
                 }
     
                 .item-title {
@@ -533,7 +533,11 @@ header {
 
         .contact .contact-btn { font-size: 1em; }
 
-        .timeline .timeline-item .timeline-item-content { padding: 20px 30px; }
+        .timeline .timeline-item .timeline-item-content { 
+            padding: 20px 30px; 
+
+            .timestamp { font-size: 0.75em; }
+        }
     }
 
     .blog-section {
