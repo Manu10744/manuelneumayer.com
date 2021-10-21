@@ -169,7 +169,7 @@ header {
             padding-left: 40px;
 
             .timeline-item-content {
-                max-width: 500px;
+                max-width: 400px;
                 padding: 20px; 
                 background: $dark-white;
                 border: 1px solid $gray;
@@ -192,21 +192,13 @@ header {
     
                 .timestamp {
                     display: inline-block;
+                    background: $light-black;
+                    color: $white;
                     font-weight: bold;
-                    margin-bottom: 20px;
-                    color: $black;
+                    padding: 5px 10px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                     font-size: 0.75em;
-                    position: relative;
-                }
-
-                .timestamp::after {
-                    content: '';
-                    height: 1px;
-                    width: 75px;
-                    background: $gray;
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
                 }
     
                 .item-title {
@@ -539,6 +531,8 @@ header {
         }
 
         .contact .contact-btn { font-size: 1em; }
+
+        .timeline .timeline-item .timeline-item-content { padding: 20px 30px; }
     }
 
     .blog-section {
@@ -567,6 +561,8 @@ header {
     header {
         padding-left: 200px;
         padding-right: 200px;
+
+        .header-content h1 { font-size: 2.75em; }
     }
 
     .intro-section {
