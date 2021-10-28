@@ -128,32 +128,17 @@ header {
         p { max-width: 400px; }
         
         .contact-btn {
-            padding: 8px 15px;
+            padding: 10px 20px;
             margin: 15px 0;
-            border: 2px solid $black;
             display: inline-block;
             font-weight: bold;
-            color: $black;
-            font-size: 0.75em;
-            background: $white;
-            transition: background-color 0.3s ease-in-out;
-            position: relative;
-        }
-
-        .contact-btn:hover {
-            background: $black;
             color: $white;
-        }
+            font-size: 0.75em;
+            background: $cyan;
+            position: relative;
+            border-radius: 20px;
 
-        .contact-btn::after {
-            content: '';
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            background: $black;
-            z-index: -1;
+            svg { margin-right: 10px; }
         }
     }
 
