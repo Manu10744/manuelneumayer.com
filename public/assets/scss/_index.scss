@@ -381,7 +381,7 @@ header {
 
     .cv-section .timeline .timeline-item .timeline-item-content {
         .item-title {
-            font-size: 1.25em;
+            font-size: 1.1em;
         }
 
         .item-location {
@@ -439,12 +439,12 @@ header {
         .contact .contact-btn { font-size: 0.9em; }
 
         .timeline {
-            margin-top: 0;
+            margin-top: 50px;
 
             .timeline-item { 
                 width: 50%; 
                 max-width: none; 
-                margin-top: 0px;
+                margin-top: -30px;
             }
     
             .left {
@@ -479,8 +479,13 @@ header {
 }
 
 @media (min-width: 1080px) {
-    header .header-content h1 {
-        font-size: 2.5em;
+    header {
+        padding-left: 150px;
+        padding-right: 150px;
+    
+        .header-content h1 {
+            font-size: 2.5em;
+        }
     }
 
    .intro-section {
@@ -527,8 +532,6 @@ header {
 
         .timeline .timeline-item .timeline-item-content { 
             padding: 20px 30px; 
-
-            .timestamp { font-size: 0.75em; }
         }
     }
 
@@ -546,11 +549,6 @@ header {
 }
 
 @media (min-width: 1200px) {
-    header {
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-
     .tech-section .splide .tech-list .tech-item { height: 90px; }
 }
 
@@ -578,6 +576,4 @@ header {
         width: 250px;
         right: 150px;
     }
-
-    .tech-section .splide .tech-list .tech-item { height: 100px; }
 }
