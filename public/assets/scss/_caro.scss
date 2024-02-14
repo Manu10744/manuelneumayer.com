@@ -1,0 +1,62 @@
+.caro-flower-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .caro-flower-intro {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    width: 100%;
+
+    h1 {
+      font-size: 2.25em;
+      color: white;
+      text-shadow: 3px 2px black;
+      text-align: center;
+      border-color: black;
+    }
+  }
+
+  .caro-flower {
+    position: relative;
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .caro-flower-textcontainer {
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    display: none;
+    opacity: 0.85;
+
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    .yes-btn, .no-btn {
+        font-size: 1em;
+        padding: 6px 12px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .yes-btn {
+      background: green;
+      color: white;
+      margin-right: 5px;
+    }
+
+    .no-btn {
+      background: red;
+      color: white;
+    }
+  }
+}
